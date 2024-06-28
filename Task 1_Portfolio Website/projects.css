@@ -1,0 +1,143 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background: linear-gradient(to right, #FFE484, #FF6161);
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a.active {
+    color: #ff0000;
+}
+
+.projects {
+    padding: 0px 32px 0px 32px;
+    text-align: center;
+    height: 477px;
+    width: auto;
+    margin-bottom: -33px;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.projects hr {
+    width: 50px;
+    border: 2px solid #ff0000;
+    margin: 1rem auto;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px;
+    border-radius: 10px;
+    width: 20%;
+    height: 250px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+}
+
+.project-links a {
+    margin: 0 5px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    font-size: 1rem;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .project-item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-item {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects{
+        height: 1370px;
+    }
+    
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .projects {
+        padding: 0px 16px;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+}
